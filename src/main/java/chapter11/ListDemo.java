@@ -38,5 +38,8 @@ public class ListDemo {
             }
         });
         System.out.println(list);
+
+        list.sort(Comparator.comparingInt(String::length));
+        list.forEach(System.out::println);
     }
 }
